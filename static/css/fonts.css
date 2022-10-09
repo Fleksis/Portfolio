@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Alef';
+    src: url("../fonts/Alef-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url("../fonts/Alata-regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url("../fonts/NotoSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'DaysGone';
+    src: url("../fonts/DaysGone.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'AlegreyaSans';
+    src: url("../fonts/AlegreyaSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'AlegreyaSans-Bold';
+    src: url("../fonts/AlegreyaSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'AlegreyaSans-Medium';
+    src: url("../fonts/AlegreyaSans-Medium.ttf") format('truetype');
+}
+
