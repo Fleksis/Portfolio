@@ -16,10 +16,10 @@
           <span title="Wannabe junior fullstack developer">Markuss Misins</span>
         </div>
         <div class="navigation-buttons">
-          <a href="#two">Par mani</a>
-          <a href="#">Valodas un rīki</a>
-          <a href="#">Mani projekti</a>
-          <a href="#">Kontakt informācija</a>
+          <a onclick="currentPage = '#two'" href="#two">Par mani</a>
+          <a onclick="currentPage = '#three'" href="#three">Valodas un rīki</a>
+          <a href="#four">Mani projekti</a>
+          <a href="#five">Kontaktinformācija</a>
         </div>
       </div>
       <div class="navigation-contact-information">
@@ -42,7 +42,23 @@
     </div>
     <div id="two" class="page">
     </div>
+    <div id="three" class="page">
+    </div>
   </div>
 </div>
 </body>
+
+<script>
+    let resizeTimeout;
+    let currentPage = '#one';
+
+
+    window.addEventListener('resize', ()=>{
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            window.location = currentPage;
+            console.log('asd')
+        }, 100)
+    })
+</script>
 </html>

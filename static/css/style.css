@@ -17,7 +17,7 @@ body {
 
 #pages {
     display: flex;
-    width: 200%;
+    width: 300vw;
     box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    transition: all 1s;
+    transition: 1s;
 
     padding-top: 2%;
     padding-right: 2%;
@@ -45,6 +45,7 @@ body {
     background-image: url("../images/MainMenu.png");
     z-index: 2;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 0 -100px;
 }
 
@@ -85,6 +86,7 @@ body {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     font-size: 32px;
+    color: black;
 }
 
 .navigation-buttons > a:hover {
@@ -93,11 +95,9 @@ body {
     cursor: pointer;
 }
 
-.navigation-buttons > a:visited,a:link {
-    color: black;
+.navigation-buttons > a:link {
     text-decoration: none;
 }
-
 
 .navigation-contact-information {
     display: flex;
@@ -171,5 +171,14 @@ body {
 #two {
     background-image: url("../images/AboutMe.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+
+
+#three {
+    background-image: url("../images/AboutMe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: 0 -100px;
 }
