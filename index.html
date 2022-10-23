@@ -24,23 +24,38 @@
       </div>
       <div class="navigation-contact-information">
         <div>
-          <img src="static/svg/Discord.svg">
+          <img src="static/svg/Discord.svg" alt="discord">
           <span class="text-first-child">Discord</span>
           <span class="text-last-child">Copy</span>
         </div>
         <div onclick="window.location='https://steamcommunity.com/id/mrlatvian/';">
-          <img src="static/svg/Steam.svg">
+          <img src="static/svg/Steam.svg" alt="steam">
           <span class="text-first-child">Steam</span>
           <span class="text-last-child">Link</span>
         </div>
         <div>
-          <img src="static/svg/Gmail.svg">
+          <img src="static/svg/Gmail.svg" alt="gmail">
           <span class="text-first-child">Gmail</span>
           <span class="text-last-child">Copy</span>
         </div>
       </div>
     </div>
     <div id="two" class="page">
+      <div class="about-me-title">
+        <div>
+          <span>Par mani</span>
+          <span>Fullstack developer</span>
+          <span>Laravel developer</span>
+          <span>VueJS developer</span>
+        </div>
+      </div>
+      <div class="about-me-description">
+        <p>
+          Man ir <span id="old"></span> gadi, aktīvi programmēju jau <span id="howLong"></span>.
+          Strādāju pie 2 produkcijas projektiem, kuri vēl ir izstrādes procesā.
+          Katru reizi kad programmēju cenšos kaut ko jaunu iemācos.
+        </p>
+      </div>
     </div>
     <div id="three" class="page">
     </div>
@@ -50,15 +65,30 @@
 
 <script>
     let resizeTimeout;
-    let currentPage = '#one';
 
-
-    window.addEventListener('resize', ()=>{
+    window.addEventListener('resize', ()=> {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            window.location = currentPage;
+            window.location = '#one';
             console.log('asd')
         }, 100)
     })
+
+    let ageDifMs = Date.now() - new Date(2003, 3, 17);
+    let ageDate = new Date(ageDifMs);
+    let yearsOld = Math.abs(ageDate.getUTCFullYear() - 1970);
+    document.getElementById("old").innerHTML = yearsOld.toString()
+
+    let expDifMs = Date.now() - new Date(2022, 5, 20);
+    let expDate = new Date(expDifMs);
+    console.log(expDate.getUTCFullYear())
+    if (expDate.getUTCFullYear() - 1970 >= 1) {
+        let expYears = Math.abs(expDate.getUTCFullYear() - 1970);
+        let expMonths = Math.abs(expDate.getMonth());
+        document.getElementById("howLong").innerHTML = expYears.toString() + " gadus un " + expMonths.toString() + " mēnešus"
+    } else {
+        let exp = Math.abs(expDate.getMonth());
+        document.getElementById("howLong").innerHTML = exp.toString() + " mēnešus"
+    }
 </script>
 </html>
