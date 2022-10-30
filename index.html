@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/fonts.css">
-  <link rel="shortcut icon" href="static/images/favicon.gif">
+  <link rel="shortcut icon" href="static/images/profilePicTransperecy.gif">
   <title>Markuss Mišins</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
           <span class="text-first-child">Discord</span>
           <span class="text-last-child">Copy</span>
         </div>
-        <div onclick="window.location='https://steamcommunity.com/id/mrlatvian/';">
+        <div onclick="window.open('https://steamcommunity.com/id/mrlatvian/', '_blank')">
           <img src="static/svg/Steam.svg" alt="steam">
           <span class="text-first-child">Steam</span>
           <span class="text-last-child">Link</span>
@@ -44,20 +44,139 @@
       <div class="about-me-title">
         <div>
           <span>Par mani</span>
-          <span>Fullstack developer</span>
-          <span>Laravel developer</span>
-          <span>VueJS developer</span>
         </div>
       </div>
       <div class="about-me-description">
         <p>
-          Man ir <span id="old"></span> gadi, aktīvi programmēju jau <span id="howLong"></span>.
-          Strādāju pie 2 produkcijas projektiem, kuri vēl ir izstrādes procesā.
-          Katru reizi kad programmēju cenšos kaut ko jaunu iemācos.
+          Mani sauc Markuss Mišins, esmu <span id="old"></span> gadus vecs, aktīvi nodarbojos ar <span>Web programmēšanu</span> jau <span id="howLong"></span>.
+          <br><br>
+          Mana programmēšanas karjera sākās ar programmēšanas valodu <span>Python</span>, bet ātri vien pārgāju uz <span>C</span> valodām.
+          Tad pēc kāda laika izdomāju sākt aktīvi mācīties web programmēšanu, lai spētu taisīt pilnvērtīgus <span>Full-stack</span> projektus.
+          <br><br>
+          Pašlaik apgūstu <span>Laravel</span> ar <span>PHP</span>, kā arī <span>VueJS</span> ar <span>JavaScript</span>,
+          un esmu motivēts turpmāk mācīties un apgūt industrijas valodas un rīkus.
         </p>
       </div>
     </div>
     <div id="three" class="page">
+      <div class="exp-container">
+        <div class="exp-title">
+          <div>
+            <span>Valodas un riki</span>
+            <span>Fullstack developer</span>
+            <span>Laravel developer</span>
+            <span>VueJS developer</span>
+          </div>
+        </div>
+        <div class="exp-description">
+          <p>
+            Rakstu uz <span>JavaScript</span> un <span>PHP</span>,
+            lai taisītu fullstack projektus, bet lai efektīvak veidotu projektus, tiek izmantoti frameworks - <span>"VueJS"</span> un <span>"Laravel"</span>.
+          </p>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="exp-column-1">
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/PHP.svg" alt="PHP">
+            </div>
+            <div class="tool-description">
+              <h2>PHP</h2>
+              <p>Pieredze <span id="php-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+                <img src="static/svg/JavaScript.svg" alt="JS">
+            </div>
+            <div class="tool-description">
+              <h2>JavaScript</h2>
+              <p>Pieredze <span id="js-exp" onload="getExpLength('2021, 4, 3', 'js-exp')"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/Html.svg" alt="HTML">
+            </div>
+            <div class="tool-description">
+              <h2>HTML</h2>
+              <p>Pieredze <span id="html-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/Git.svg" alt="HTML">
+            </div>
+            <div class="tool-description">
+              <h2>HTML</h2>
+              <p>Pieredze <span id="git-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/PostgreSQL.svg" alt="HTML">
+            </div>
+            <div class="tool-description">
+              <h2>HTML</h2>
+              <p>Pieredze <span id="postgresql-exp"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="exp-column-2">
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/Laravel.svg" alt="Laravl">
+            </div>
+            <div class="tool-description">
+              <h2>Laravel</h2>
+              <p>Pieredze <span id="laravel-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/VueJS.svg" alt="VueJS">
+            </div>
+            <div class="tool-description">
+              <h2>VueJS</h2>
+              <p>Pieredze <span id="vue-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/svg/Css.svg" alt="CSS">
+            </div>
+            <div class="tool-description">
+              <h2>CSS</h2>
+              <p>Pieredze <span id="css-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <div>
+                <img src="static/images/Linux.png" alt="CSS">
+              </div>
+            </div>
+            <div class="tool-description">
+              <h2>CSS</h2>
+              <p>Pieredze <span id="linux-exp"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="tool-image">
+              <img src="static/images/MySQL.png" alt="CSS">
+            </div>
+            <div class="tool-description">
+              <h2>CSS</h2>
+              <p>Pieredze <span id="mysql-exp"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="four" class="page">
+    </div>
+    <div id="five" class="page">
     </div>
   </div>
 </div>
@@ -70,7 +189,6 @@
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
             window.location = '#one';
-            console.log('asd')
         }, 100)
     })
 
@@ -79,9 +197,8 @@
     let yearsOld = Math.abs(ageDate.getUTCFullYear() - 1970);
     document.getElementById("old").innerHTML = yearsOld.toString()
 
-    let expDifMs = Date.now() - new Date(2022, 5, 20);
+    let expDifMs = Date.now() - new Date(2021, 12, 25);
     let expDate = new Date(expDifMs);
-    console.log(expDate.getUTCFullYear())
     if (expDate.getUTCFullYear() - 1970 >= 1) {
         let expYears = Math.abs(expDate.getUTCFullYear() - 1970);
         let expMonths = Math.abs(expDate.getMonth());
@@ -89,6 +206,51 @@
     } else {
         let exp = Math.abs(expDate.getMonth());
         document.getElementById("howLong").innerHTML = exp.toString() + " mēnešus"
+    }
+
+    getExpLength([2022, 5, 15], 'php-exp')
+    getExpLength([2021, 4, 3], 'js-exp')
+    getExpLength([2021, 3, 10], 'html-exp')
+
+    getExpLength([2021, 3, 10], 'git-exp')
+    getExpLength([2022, 6, 25], 'postgresql-exp')
+
+    getExpLength([2022, 5, 20], 'laravel-exp')
+    getExpLength([2022, 6, 5], 'vue-exp')
+    getExpLength([2021, 3, 10], 'css-exp')
+
+    getExpLength([2021, 12, 24], 'linux-exp')
+    getExpLength([2022, 1, 10], 'mysql-exp')
+
+    function getExpLength(date, id) {
+        let expDifMs = Date.now() - new Date(date[0], date[1], date[2]);
+        let expDate = new Date(expDifMs);
+
+        let expYears = Math.abs(expDate.getUTCFullYear() - 1970);
+        let expMonths = expDate.getMonth();
+
+        let cardSpan = document.getElementById(id)
+        if (expYears >= 1) {
+            if (expYears === 11) {
+                cardSpan.innerHTML = expYears.toString() + " gadi"
+            } else if (expYears === 1) {
+                cardSpan.innerHTML = expYears.toString() + " gads"
+            } else if (expYears % 10 === 1) {
+                cardSpan.innerHTML = expYears.toString() + " gadu"
+            } else {
+                cardSpan.innerHTML = expYears.toString() + " gadi"
+            }
+        } else {
+            if (expMonths === 11) {
+                cardSpan.innerHTML = expMonths.toString() + " mēneši"
+            } else if (expMonths === 1) {
+                cardSpan.innerHTML = expMonths.toString() + " Mēnesis"
+            } else if (expMonths % 10 === 1) {
+                cardSpan.innerHTML = expMonths.toString() + " mēnešu"
+            } else {
+                cardSpan.innerHTML = expMonths.toString() + " mēneši"
+            }
+        }
     }
 </script>
 </html>

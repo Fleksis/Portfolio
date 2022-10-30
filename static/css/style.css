@@ -5,6 +5,7 @@ html, body {
 
 body {
     min-height: 100%;
+    background-color: black;
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 
 #pages {
     display: flex;
-    width: 300vw;
+    width: 500vw;
     box-sizing: border-box;
 }
 
@@ -26,9 +27,9 @@ body {
     height: 100vh;
     transition: 1s;
 
-    padding-top: 2%;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
 }
 
 #one {
@@ -171,31 +172,21 @@ body {
 }
 
 .about-me-title {
-    width: 640px;
-    height: 50px;
-    border: 15px solid;
-    padding: 18px;
-    border-image: url("../images/Border.png") 30 stretch;
-    overflow: hidden;
-}
-
-.about-me-title > div {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    animation: aboutMeTitle 10s ease;
-    animation-iteration-count: infinite;
-    margin-top: -5px;
+    width: 462px;
+    border: 15px solid;
+    padding: 10px;
+    border-image: url("../images/Border.png") 30 stretch;
+    font-family: DaysGone;
     font-size: 64px;
 }
 
-.about-me-title > div > span {
-    font-family: DaysGone;
+.about-me-title > div {
     margin-inline: auto;
 }
 
 .about-me-description {
-    width: 500px;
+    width: 700px;
     font-size: 32px;
     font-family: AlegreyaSans;
 }
@@ -234,8 +225,155 @@ body {
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 #three {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
     background-image: url("../images/Projects&Tools.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 2;
+}
+
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.exp-description {
+    width: 40%;
+}
+
+.exp-description > p {
+    text-align: end;
+    font-size: 32px;
+    font-family: AlegreyaSans;
+}
+
+.exp-description > p > span {
+    font-family: AlegreyaSans-Bold;
+}
+
+.exp-title {
+    width: 640px;
+    height: 50px;
+    border: 15px solid;
+    padding: 18px;
+    border-image: url("../images/Border.png") 30 stretch;
+    overflow: hidden;
+}
+
+.exp-title > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    animation: aboutMeTitle 10s ease;
+    animation-iteration-count: infinite;
+    margin-top: -5px;
+    font-size: 64px;
+}
+
+.exp-title > div > span {
+    font-family: DaysGone;
+    margin-inline: auto;
+}
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.exp > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 340px;
+}
+
+
+.exp > div > div {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    width: 120px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    filter: saturate(1);
+    user-select: none;
+    cursor: help;
+    transition: 0.6s;
+}
+
+.exp > div > div:hover {
+    width: 100%;
+    filter: saturate(1);
+}
+
+.tool-image > img {
+    height: 64px;
+    width: 120px;
+}
+
+.exp-column-2 > div:nth-child(4) > .tool-image > div {
+    width: 120px;
+}
+
+.exp-column-2 > div:nth-child(4) > .tool-image > div > img {
+    width: 64px;
+    height: initial;
+    display: flex;
+    margin-inline: auto;
+}
+
+.tool-description {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tool-description > h2 {
+    font-size: 32px;
+    font-family: AlegreyaSans-Bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.tool-description > p {
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: AlegreyaSans;
+    text-align: center;
+    margin: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#four {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    background-image: url("../images/Projects.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#five{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    background-image: url("../images/ContactMe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
 }
