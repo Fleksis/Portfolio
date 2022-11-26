@@ -208,20 +208,20 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           <div>
             <label class="input-container">
               <p>Vārds</p>
-              <input placeholder="Ievadiet vārdu" name="firstname">
+              <input placeholder="Ievadiet vārdu" name="firstname" required>
             </label>
             <label class="input-container">
               <p>Uzvārds</p>
-              <input placeholder="Ievadiet uzvārdu" name="lastname">
+              <input placeholder="Ievadiet uzvārdu" name="lastname" required>
             </label>
           </div>
           <label class="input-container">
             <p>E-pasts</p>
-            <input placeholder="Ievadiet epastu" name="email">
+            <input placeholder="Ievadiet epastu" name="email" type="email" required>
           </label>
           <label class="input-container">
             <p>Apraksts</p>
-            <textarea placeholder="Ievadiet aprakstu" name="description"></textarea>
+            <textarea placeholder="Ievadiet aprakstu" name="description" required maxlength="255"></textarea>
           </label>
           <button>Sūtīt!</button>
         </form>
